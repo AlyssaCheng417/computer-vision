@@ -3,8 +3,8 @@ let h = 240;
 let capture;
 
 function setup() {
-  let c = createCanvas(w, h);
-  c.oarent("#sketch-parent")
+  let canvas = createCanvas(w, h);
+  canvas.parent("#sketch-parent")
   pixelDensity(1);
   capture = createCapture(VIDEO);
   capture.size(w, h);
@@ -37,7 +37,7 @@ function draw() {
       
       //fill(255, 200, 255);
       fill(c);
-   noStroke();
+      noStroke();
       push();
       translate(capture.width, 0);
       scale(-1, 1);
@@ -53,19 +53,7 @@ function draw() {
       //   ellipse(x, y, size, size);
       // pop();
       
-    //if (brightness < threshold){
-    //capture.pixels[index] = 0;
-    // capture.pixels[index+1] = 0; 
-    // capture.pixels[index+2] = 0;
-    //  } else {
-    // capture.pixels[index] = 255;
-    // capture.pixels[index+1] = 255; 
-    //capture.pixels[index+2] = 255;   
-    // }
     }
   }
-  capture.updatePixels();
-  
-  //image(capture, 0, 0);  
   
 }
