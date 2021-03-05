@@ -5,7 +5,7 @@ let buttonSize;
 
 function setup() {
   let canvas = createCanvas(innerWidth, innerHeight);
-  canvas.parent("#sketc-parent");
+  canvas.parent("#sketch-parent");
   background(r,g,b,70);
   r = random(255);
   g = random(255);
