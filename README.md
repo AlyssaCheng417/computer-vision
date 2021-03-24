@@ -1,5 +1,4 @@
-# computer-version
-## P5.js Coding Art
+# P5.js Coding Art
 1. *Circulation*
 - Exploring the randomness of colors and movements. 
 
